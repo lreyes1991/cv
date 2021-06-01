@@ -1,0 +1,69 @@
+$(document).ready(function () {
+   //var param = {lastName: "Doe", firstName: "John"};
+
+  /* $.ajax({
+     url: 'https://currvit-83a8a-default-rtdb.firebaseio.com/.json',
+     type: "POST",
+     data: JSON.stringify(param),
+     success: function () {
+       console.log("success");
+     },
+     error: function(error) {
+       console.log("error: "+error);
+     }
+   });*/
+ });
+ 
+
+  
+  //---ready---------
+  var nameV,rollV,secV,genV;
+  
+  function Ready(){
+     nameV=document.getElementById('namebox').value;
+     rollV=document.getElementById('rollbox').value;
+     secV=document.getElementById('secbox').value;
+     ngenV=document.getElementById('genbox').value;
+     
+  }
+  ////----insert----
+  document.getElementById('insert').onclick=function(){
+   Ready();
+   firebase.database().ref('student/'+rollV).set({
+      NameOfStudent: nameV,
+      RollNo:rollV,
+      Section:rollV,
+      Gender:genV
+   });  
+  
+  }
+  
+  //------------selection----------
+  documente.getElementById("select").onclick=function(){
+  
+  Ready();
+  firebase.database().ref('student/'+rollV).on('value',function(snapshot){
+     document.getElementById('namebox').value=snapshot.val().NameOfStudent;
+     document.getElementById('secbox').value=snapshot.val().Section;
+     document.getElementById('genbox').value=snapshot.val().Gender;
+  });
+  
+  
+  }
+  //-------------update----------
+    document.getElementById('update').onclick=function(){
+   Ready();
+   firebase.database().ref('student/'+rollV).update({
+      NameOfStudent: nameV,     
+      Section:rollV,
+      Gender:genV
+   });  
+  
+  }
+  //-----------delete
+    document.getElementById('delete').onclick=function(){
+   Ready();
+   firebase.database().ref('student/'+rollV).remove();
+
+  
+  }

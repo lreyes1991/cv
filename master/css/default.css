@@ -1,0 +1,96 @@
+﻿body{
+/*background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
+background-color:#212121;
+}
+#art1{
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+}
+
+p,li,.titulo{
+color:white;
+}
+
+#art3{
+
+/*text-align:start;*/
+align-content:left;
+
+}
+#p1{
+
+text-align:center;
+position:relative
+vertical-align:middle;
+}
+
+#fotocontainer{
+text-align:center;
+
+
+}
+
+
+#main-foto{
+border-radius:50%;
+display:inline;
+width:200px;
+height:200px;
+border:solid;
+border-color:white;
+}
+
+.contenido{
+font-size:1em;
+}
+
+#art3 p{
+display:inline;
+float:left;
+align-self:left;
+
+}
+.titulo{
+font-size:2em;
+text-align:left;
+margin-left:5%;
+
+}
+
+#cvinicio,#cvcursos,#cvface{
+padding:2em;
+
+}
+
+td{
+color:white;
+margin:20px;
+}
+
+   .cvmenu{
+    display: flex;
+    background-color: royalblue;
+    list-style: none;
+}
+
+/* Teléfonos */
+@media (max-width: 480px) {
+  
+
+
+ #art1{
+ display:grid;
+ }
+ #container1{
+ text-align:center;
+ }
+ .titulo{
+ display:inline;
+ margin-left:0%;
+ }
+  
+}
