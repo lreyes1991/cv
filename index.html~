@@ -1,0 +1,199 @@
+
+<html>
+   <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Luis Rodolfo Reyes</title>
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	  <script languaje= "javascript" type="text/javascript" src="js\fb.js"></script>
+<link rel="stylesheet" href="css\default.css">
+   </head>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+
+
+
+<body>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+   <div id="container1"><p class="titulo">Sobre mí</p></div>
+   <div id="art1" class= "row col-sm-12">
+           <div id="fotocontainer" class="col col-sm-6">
+		        <img id="main-foto" src="img/foto1.jpg"></img>
+		   </div>
+		   
+           <div class="col col-sm-6">
+		        <p id="p1" class="contenido">Mi nombre es Luis Rodolfo Reyes, nací en Ciudad de Guatemala en 1991 y tengo experiencia en campos de la informática como 
+                 Reparación de computadoras, soporte técnico, Desarrollo web y , videojuegos 2D y desarrollo de aplicaciones de escritorio.</p>
+		   </div>
+		   Name <input id="namebox" type="text"></input><br><br>
+		   Roll No <input id="rollbox" type="text"></input><br><br>
+		   Section <input id="secbox" type="text"></input><br><br>
+		   Gender <input id="genbox" type="text"></input><br><br>
+		   <br><br>
+		   <button id="insert">INSERT</button>
+		   <button id="select">SELECT</button>
+		   <button id="update">UPDATE</button>
+		   <button id="delete">DELETE</button>
+   </div>
+   <div id="art1" class= "row col-sm-12">
+       <div class="container1"><p class="titulo">A qué me dedico?</p></div>
+   </div>
+   <div id="art2" class="row col-sm-12">
+           <div class="col-sm-6">
+		        <ul>
+				     <li>Actualmente al desarrollo de sitios web(Específicamente Front-end)</li>
+					 <li>Publicación de documentos acerca de desarrollo web y Administración de Servidores Linux.</li>
+					 <li>Colaboración en grupos de redes sociales, intercambiando conocimientos relacionados a informática.</li>
+				</ul>   
+           </div>
+    </div>	
+
+	<div id="art1" class= "row col-sm-12">
+    <div class="container1"><p class="titulo">Formación complementaria</p></div>
+	</div>
+	<div id="art3" class="row col-sm-12 d-flex justify-content-between">	
+	     <div class="col col-sm-02"><p>Actualmente</p></div><div class="col col-sm-06"><p>5to semestre P.E.M Lengua y literatura</p></div><div class="col col-sm-04"><p>USAC</p></div>
+	</div>
+	
+	<div id="art3" class="row col-sm-12 d-flex justify-content-between">
+	     <div class="col col-sm-02"><p>2017</p></div><div class="col col-sm-06"><p>Finishing School for Call Centers</p></div><div class="col col-sm-04"><p>Intecap, Zona 5 TICS</p></div>
+	</div>
+	
+	<div id="art3" class="row col-sm-12 d-flex justify-content-between">
+	     <div class="col col-sm-02"><p>2017</p></div><div class="col col-sm-06"><p>Desarrollo de Aplicaciones Móviles Android</p></div><div class="col col-sm-04"><p>Google</p></div>
+	</div>	
+	
+	<div id="art3" class="row col-sm-12 d-flex justify-content-between">
+	     <div class="col col-sm-02"><p>2014</p></div><div class="col col-sm-06"><p>Reparador de Computadoras de escritorio</p></div><div class="col col-sm-04"><p>Intecap Zona 7 CG1</p></div>
+	</div>
+	
+	<div id="art3" class="row col-sm-12 d-flex justify-content-between">
+	     <div class="col col-sm-02"><p>2014</p></div><div class="col col-sm-06"><p>Reparador de Computadoras portátiles</p></div><div class="col col-sm-04"><p>Intecap Zona 7 CG1</p></div>
+	</div>
+	
+	<div id="art3" class="row col-sm-12 d-flex justify-content-between">
+	     <div class="col col-sm-02"><p>2013</p></div><div class="col col-sm-06"><p>Dibujo vectorial con Adobe Illustratorcs6</p></div><div class="col col-sm-04"><p>Intecap Antigua</p></div>
+	</div>
+	
+	<div id="art3" class="row col-sm-12 d-flex justify-content-between">
+	     <div class="col col-sm-02"><p>2013</p></div><div class="col col-sm-06"><p>Adobe Photoshop avanzado cs6</p></div><div class="col col-sm-04"><p>Intecap Antigua</p></div>
+	</div>	
+	
+	<div id="art3" class="row col-sm-12 d-flex justify-content-between">
+	     <div class="col col-sm-02"><p>2012</p></div><div class="col col-sm-06"><p>Nivel Avanzado de Inglés</p></div><div class="col col-sm-04"><p>Jabez English Academy</p></div>
+	</div>		
+	<div id="art1" class= "row col-sm-12">
+	    <div class="container1"><p class="titulo">Formación académica</p></div>
+	</div>
+	<div id="art3" class="row col-sm-12 d-flex justify-content-between">
+	     <div class="col col-sm-02"><p>2009</p></div><div class="col col-sm-06"><p>Bachiller en computación con orientación comercial  y diplomado en programación</p></div><div class="col col-sm-04"><p>Liceo Cristiano de Estudios Avanzados ELIM</p></div>
+	</div>   
+	<div id="art1" class= "row col-sm-12">
+        <div class="container1"><p class="titulo">Idiomas</p></div>
+	</div>
+       <ul>
+          <li>Español(Nativo)</li>
+          <li>Inglés(70% written 60% spoken)</li>
+       </ul>
+	   <div id="art1" class= "row col-sm-12">
+            <div class="container1"><p class="titulo">Habilidades</p></div>
+	   </div>
+	   <ul>
+	       <li>Javascript</li>
+		   <li>HTML</li>
+		   <li>CSS</li>
+		   <li>GIMP</li>
+		   <li>Photoshop CS6</li>
+		   <li>Illustrator CS6</li>
+		   <li>PHP</li>
+		   <li>Visual Basic.net</li>
+		   <li>BASH</li>
+		   <li>BAT</li>
+		   <li>C++</li>
+		   <li>MySQL</li>
+		   <li>MongoDB</li>
+		   <li>Ms Office</li>
+	   <ul>
+	   <script>
+ 
+ // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC6xJOl_BC_pXkBxl5IBe2nP-HAz-ybH2M",
+    authDomain: "currvit-83a8a.firebaseapp.com",
+    databaseURL: "https://currvit-83a8a-default-rtdb.firebaseio.com",
+    projectId: "currvit-83a8a",
+    storageBucket: "currvit-83a8a.appspot.com",
+    messagingSenderId: "750655807244",
+    appId: "1:750655807244:web:257c2ce4c78ec8c6aaf329",
+    measurementId: "G-YM9JYZZC2X"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+ 
+   //---ready---------
+  var nameV,rollV,secV,genV;
+  
+  function Ready(){
+     nameV=document.getElementById('namebox').value;
+     rollV=document.getElementById('rollbox').value;
+     secV=document.getElementById('secbox').value;
+     genV=document.getElementById('genbox').value;
+     
+  }
+  ////----insert----
+  document.getElementById('insert').onclick=function(){
+   Ready();
+   firebase.database().ref('student/'+rollV).set({
+      NameOfStudent: nameV,
+      RollNo:rollV,
+      Section:secV,
+      Gender:genV
+   });  
+  
+  }
+  
+  //------------selection----------
+  document.getElementById("select").onclick=function(){
+  
+  Ready();
+  firebase.database().ref('student/'+rollV).on('value',function(snapshot){
+     document.getElementById('namebox').value=snapshot.val().NameOfStudent;
+     document.getElementById('secbox').value=snapshot.val().Section;
+     document.getElementById('genbox').value=snapshot.val().Gender;
+  });
+  
+  
+  }
+  //-------------update----------
+    document.getElementById('update').onclick=function(){
+   Ready();
+   firebase.database().ref('student/'+rollV).update({
+      NameOfStudent: nameV,     
+      Section:rollV,
+      Gender:genV
+   });  
+  
+  }
+  //-----------delete
+    document.getElementById('delete').onclick=function(){
+   Ready();
+   firebase.database().ref('student/'+rollV).remove();
+
+  
+  }
+  
+</script>
+</body>
+
+</html>
+
